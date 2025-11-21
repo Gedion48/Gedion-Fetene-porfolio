@@ -79,7 +79,7 @@ export function HeroSection() {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <a
-              href="/Gedion Fetene.pdf"
+              href="/Gedion-Fetene-portfolio.pdf"
               download
               className="px-8 py-3 bg-gradient-to-r from-primary to-secondary text-primary-foreground font-semibold rounded-lg hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 flex items-center justify-center gap-2 group"
             >
