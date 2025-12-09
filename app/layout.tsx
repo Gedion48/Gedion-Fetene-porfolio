@@ -1,15 +1,19 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Space_Grotesk } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
-import "./globals.css"
+import type React from "react";
+import type { Metadata } from "next";
+import { Space_Grotesk } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["400", "500", "600", "700"] })
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
-  title: "Portfolio - Fisiha Desta",
-  description: "Web Developer & Graphic Designer - Building elegant digital experiences with modern technology",
-  generator: "v0.app",
+  title: "Portfolio - Gedion Fetene",
+  description:
+    "Full Stack devlooper - Building elegant digital experiences with modern technology",
+
   icons: {
     icon: [
       {
@@ -27,12 +31,12 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -41,5 +45,5 @@ export default function RootLayout({
         <Analytics />
       </body>
     </html>
-  )
+  );
 }
